@@ -16,60 +16,102 @@ This repository contains a curated set of specialized subagents that extend Clau
 
 ## Available Subagents
 
-### 🏗️ Development & Architecture
+Agents are now organized into logical categories for easier navigation:
 
-- **[backend-architect](backend-architect.md)** - Design RESTful APIs, microservice boundaries, and database schemas
-- **[frontend-developer](frontend-developer.md)** - Build React components, implement responsive layouts, and handle client-side state management
-- **[full-stack-developer](full-stack-developer.md)** - End-to-end web application development from UI to database with seamless integration
-- **[mobile-developer](mobile-developer.md)** - Develop React Native or Flutter apps with native integrations
-- **[graphql-architect](graphql-architect.md)** - Design GraphQL schemas, resolvers, and federation patterns
-- **[architect-reviewer](architect-review.md)** - Reviews code changes for architectural consistency and design patterns
+### 🏗️ [Development](development/)
 
-### 💻 Language & Framework Specialists
+**Frontend & UI Specialists**
 
-- **[python-pro](python-pro.md)** - Write idiomatic Python code with advanced features and optimizations
-- **[golang-pro](golang-pro.md)** - Write idiomatic Go code with goroutines, channels, and interfaces
-- **[typescript-pro](typescript-pro.md)** - Advanced TypeScript development with type safety and modern patterns
-- **[react-pro](react-pro.md)** - Expert React development with hooks, performance optimization, and best practices
-- **[nextjs-pro](nextjs-pro.md)** - Next.js specialist for SSR, SSG, and full-stack React applications
-- **[postgres-pro](postgres-pro.md)** - PostgreSQL database expert for advanced queries and optimizations
-- **[electron-pro](electorn-pro.md)** - Electron desktop application development and cross-platform solutions
+- **[frontend-developer](development/frontend-developer.md)** - Build React components, implement responsive layouts, and handle client-side state management
+- **[ui-designer](development/ui-designer.md)** - Creative UI design focused on user-friendly interfaces
+- **[ux-designer](development/ux-designer.md)** - User experience design and interaction optimization
+- **[react-pro](development/react-pro.md)** - Expert React development with hooks, performance optimization, and best practices
+- **[nextjs-pro](development/nextjs-pro.md)** - Next.js specialist for SSR, SSG, and full-stack React applications
 
-### ☁️ Infrastructure & Operations
+**Backend & Architecture**
 
-- **[devops-incident-responder](devops-incident-responder.md)** - Debug production issues, analyze logs, and fix deployment failures
-- **[deployment-engineer](deployment-engineer.md)** - Configure CI/CD pipelines, Docker containers, and cloud deployments
-- **[cloud-architect](cloud-architect.md)** - Design AWS/Azure/GCP infrastructure and optimize cloud costs
-- **[database-optimizer](database-optimizer.md)** - Optimize SQL queries, design efficient indexes, and handle database migrations
-- **[incident-responder](incident-responder.md)** - Handles production incidents with urgency and precision
-- **[dx-optimizer](dx-optimizer.md)** - Developer Experience specialist that improves tooling, setup, and workflows
+- **[backend-architect](development/backend-architect.md)** - Design RESTful APIs, microservice boundaries, and database schemas
+- **[full-stack-developer](development/full-stack-developer.md)** - End-to-end web application development from UI to database with seamless integration
 
-### 🔍 Quality & Security
+**Language Specialists**
 
-- **[code-reviewer](code-reviewer.md)** - Expert code review for quality, security, and maintainability
-- **[security-auditor](security-auditor.md)** - Review code for vulnerabilities and ensure OWASP compliance
-- **[test-automator](test-automator.md)** - Create comprehensive test suites with unit, integration, and e2e tests
-- **[qa-expert](qa-expert.md)** - Comprehensive QA processes and testing strategies for quality assurance
-- **[performance-engineer](performance-engineer.md)** - Profile applications, optimize bottlenecks, and implement caching strategies
-- **[debugger](debugger.md)** - Debugging specialist for errors, test failures, and unexpected behavior
+- **[python-pro](development/python-pro.md)** - Write idiomatic Python code with advanced features and optimizations
+- **[golang-pro](development/golang-pro.md)** - Write idiomatic Go code with goroutines, channels, and interfaces
+- **[typescript-pro](development/typescript-pro.md)** - Advanced TypeScript development with type safety and modern patterns
 
-### 📊 Data & AI
+**Platform & Mobile**
 
-- **[data-scientist](data-scientist.md)** - Data analysis expert for SQL queries, BigQuery operations, and data insights
-- **[data-engineer](data-engineer.md)** - Build ETL pipelines, data warehouses, and streaming architectures
-- **[ai-engineer](ai-engineer.md)** - Build LLM applications, RAG systems, and prompt pipelines
-- **[ml-engineer](ml-engineer.md)** - Implement ML pipelines, model serving, and feature engineering
-- **[prompt-engineer](prompt-engineer.md)** - Optimizes prompts for LLMs and AI systems
+- **[mobile-developer](development/mobile-developer.md)** - Develop React Native or Flutter apps with native integrations
+- **[electron-pro](development/electorn-pro.md)** - Electron desktop application development and cross-platform solutions
 
-### 🎯 Specialized Domains
+**Developer Experience**
 
-- **[api-documenter](api-documenter.md)** - Create OpenAPI/Swagger specs and write developer documentation
-- **[documentation-expert](documentation-expert.md)** - Professional technical writing and comprehensive documentation systems
-- **[payment-integration](payment-integration.md)** - Integrate Stripe, PayPal, and payment processors
-- **[product-manager](product-manager.md)** - Strategic product management with roadmap planning and stakeholder alignment
-- **[quant-analyst](quant-analyst.md)** - Build financial models, backtest trading strategies, and analyze market data
-- **[legacy-modernizer](legacy-modernizer.md)** - Refactor legacy codebases and implement gradual modernization
-- **[context-manager](context-manager.md)** - Manages context across multiple agents and long-running tasks
+- **[dx-optimizer](development/dx-optimizer.md)** - Developer Experience specialist that improves tooling, setup, and workflows
+- **[legacy-modernizer](development/legacy-modernizer.md)** - Refactor legacy codebases and implement gradual modernization
+
+### ☁️ [Infrastructure](infrastructure/)
+
+- **[cloud-architect](infrastructure/cloud-architect.md)** - Design AWS/Azure/GCP infrastructure and optimize cloud costs
+- **[deployment-engineer](infrastructure/deployment-engineer.md)** - Configure CI/CD pipelines, Docker containers, and cloud deployments
+- **[devops-incident-responder](infrastructure/devops-incident-responder.md)** - Debug production issues, analyze logs, and fix deployment failures
+- **[incident-responder](infrastructure/incident-responder.md)** - Handles production incidents with urgency and precision
+- **[performance-engineer](infrastructure/performance-engineer.md)** - Profile applications, optimize bottlenecks, and implement caching strategies
+
+### 🔍 [Quality & Testing](quality-testing/)
+
+- **[code-reviewer](quality-testing/code-reviewer.md)** - Expert code review for quality, security, and maintainability
+- **[architect-reviewer](quality-testing/architect-review.md)** - Reviews code changes for architectural consistency and design patterns
+- **[qa-expert](quality-testing/qa-expert.md)** - Comprehensive QA processes and testing strategies for quality assurance
+- **[test-automator](quality-testing/test-automator.md)** - Create comprehensive test suites with unit, integration, and e2e tests
+- **[debugger](quality-testing/debugger.md)** - Debugging specialist for errors, test failures, and unexpected behavior
+
+### 📊 [Data & AI](data-ai/)
+
+**Data Engineering & Analytics**
+
+- **[data-engineer](data-ai/data-engineer.md)** - Build ETL pipelines, data warehouses, and streaming architectures
+- **[data-scientist](data-ai/data-scientist.md)** - Data analysis expert for SQL queries, BigQuery operations, and data insights
+- **[database-optimizer](data-ai/database-optimizer.md)** - Optimize SQL queries, design efficient indexes, and handle database migrations
+- **[postgres-pro](data-ai/postgres-pro.md)** - PostgreSQL database expert for advanced queries and optimizations
+- **[graphql-architect](data-ai/graphql-architect.md)** - Design GraphQL schemas, resolvers, and federation patterns
+
+**AI & Machine Learning**
+
+- **[ai-engineer](data-ai/ai-engineer.md)** - Build LLM applications, RAG systems, and prompt pipelines
+- **[ml-engineer](data-ai/ml-engineer.md)** - Implement ML pipelines, model serving, and feature engineering
+- **[prompt-engineer](data-ai/prompt-engineer.md)** - Optimizes prompts for LLMs and AI systems
+
+**Financial Analytics**
+
+- **[quant-analyst](data-ai/quant-analyst.md)** - Build financial models, backtest trading strategies, and analyze market data
+
+### 🛡️ [Security](security/)
+
+- **[security-auditor](security/security-auditor.md)** - Review code for vulnerabilities and ensure OWASP compliance
+
+### 🎯 [Specialization](specialization/)
+
+- **[api-documenter](specialization/api-documenter.md)** - Create OpenAPI/Swagger specs and write developer documentation
+- **[documentation-expert](specialization/documentation-expert.md)** - Professional technical writing and comprehensive documentation systems
+- **[context-manager](specialization/context-manager.md)** - Manages context across multiple agents and long-running tasks
+- **[payment-integration](specialization/payment-integration.md)** - Integrate Stripe, PayPal, and payment processors
+
+### 💼 [Business](business/)
+
+- **[product-manager](business/product-manager.md)** - Strategic product management with roadmap planning and stakeholder alignment
+
+### 🎭 Meta-Orchestration
+
+- **[agent-organizer](agent-organizer.md)** - Master orchestrator for complex, multi-agent tasks. Analyzes project requirements, assembles optimal agent teams, and manages collaborative workflows for comprehensive project execution.
+
+**Key Capabilities:**
+
+- **Intelligent Project Analysis**: Technology stack detection, architecture pattern recognition, and requirement extraction
+- **Strategic Team Assembly**: Selects optimal 1-3 agent teams based on project needs and complexity
+- **Workflow Orchestration**: Manages multi-phase collaboration with quality gates and validation checkpoints
+- **Efficiency Optimization**: Focused teams for common tasks (bug fixes, features, documentation) with comprehensive orchestration for complex projects
+
+**When to Use**: Complex multi-step projects, cross-domain tasks, architecture decisions, comprehensive analysis, or any scenario requiring coordinated expertise from multiple specialized agents.
 
 ## 📦 Installation
 
@@ -108,6 +150,41 @@ ls ~/.claude/agents/*.md
 # Check Claude Code recognizes the agents (run in Claude Code)
 # "List all available subagents"
 ```
+
+### 🎭 Advanced: Agent-Organizer Auto-Dispatch Setup
+
+For users who want Claude Code to automatically use the agent-organizer for most complex tasks, you can enable the dispatch protocol:
+
+```bash
+# Copy the CLAUDE.md dispatch protocol to your Claude config directory
+cp /path/to/agents/CLAUDE.md ~/.claude/CLAUDE.md
+```
+
+**⚠️ Important Warnings:**
+
+- **🔄 Auto-Orchestration**: With CLAUDE.md enabled, Claude Code will automatically invoke the agent-organizer for most non-trivial tasks
+- **💰 Token Usage**: Multi-agent workflows consume significantly more tokens than single-agent responses (2-5x increase typical)
+- **⏱️ Processing Time**: Orchestrated workflows take longer to complete due to multi-step agent coordination
+- **🎯 Precision vs Speed**: While results are more comprehensive and expert-driven, simple tasks may be over-engineered
+
+**When CLAUDE.md is Active:**
+
+- ✅ Complex projects get expert multi-agent analysis and implementation
+- ✅ Quality is higher due to specialized agent expertise and validation
+- ⚠️ Simple questions may trigger unnecessary agent orchestration
+- ⚠️ Token costs increase substantially for routine tasks
+
+**Recommended For:**
+
+- Professional development workflows requiring high-quality, expert-driven results
+- Complex projects where comprehensive analysis and multi-domain expertise is valuable
+- Users who prioritize quality and thoroughness over speed and token efficiency
+
+**Not Recommended For:**
+
+- Casual coding assistance or simple questions
+- Token-sensitive environments or usage limits
+- Quick prototyping or experimental work
 
 ## 🔧 Usage
 
@@ -351,46 +428,46 @@ code-reviewer → performance-engineer → code-reviewer → Optimized code
 
 | Agent | Best For | Example Use Cases |
 |-------|----------|-------------------|
-| **backend-architect** | API design, system architecture | RESTful APIs, microservices, database schemas |
-| **frontend-developer** | UI/UX planning, component design | React components, responsive layouts, state management |
-| **cloud-architect** | Infrastructure design, scalability | AWS/Azure/GCP architecture, cost optimization |
-| **graphql-architect** | GraphQL system design | Schema design, resolvers, federation |
+| **[backend-architect](development/backend-architect.md)** | API design, system architecture | RESTful APIs, microservices, database schemas |
+| **[frontend-developer](development/frontend-developer.md)** | UI/UX planning, component design | React components, responsive layouts, state management |
+| **[cloud-architect](infrastructure/cloud-architect.md)** | Infrastructure design, scalability | AWS/Azure/GCP architecture, cost optimization |
+| **[graphql-architect](data-ai/graphql-architect.md)** | GraphQL system design | Schema design, resolvers, federation |
 
 ### 💻 Implementation & Development  
 
 | Agent | Best For | Example Use Cases |
 |-------|----------|-------------------|
-| **python-pro** | Python development | Django/FastAPI apps, data processing, async programming |
-| **golang-pro** | Go development | Microservices, concurrent systems, CLI tools |
-| **typescript-pro** | TypeScript development | Type-safe applications, advanced TS features |
-| **react-pro** | React expertise | Hooks, performance optimization, advanced patterns |
-| **nextjs-pro** | Next.js applications | SSR/SSG, full-stack React, routing |
+| **[python-pro](development/python-pro.md)** | Python development | Django/FastAPI apps, data processing, async programming |
+| **[golang-pro](development/golang-pro.md)** | Go development | Microservices, concurrent systems, CLI tools |
+| **[typescript-pro](development/typescript-pro.md)** | TypeScript development | Type-safe applications, advanced TS features |
+| **[react-pro](development/react-pro.md)** | React expertise | Hooks, performance optimization, advanced patterns |
+| **[nextjs-pro](development/nextjs-pro.md)** | Next.js applications | SSR/SSG, full-stack React, routing |
 
 ### ☁️ Operations & Maintenance
 
 | Agent | Best For | Example Use Cases |
 |-------|----------|-------------------|
-| **devops-incident-responder** | Production issues, deployments | Log analysis, deployment failures, system debugging |
-| **incident-responder** | Critical outages | Immediate response, crisis management, escalation |
-| **deployment-engineer** | CI/CD, containerization | Docker, Kubernetes, pipeline configuration |
-| **database-optimizer** | Database performance | Query optimization, indexing, migration strategies |
+| **[devops-incident-responder](infrastructure/devops-incident-responder.md)** | Production issues, deployments | Log analysis, deployment failures, system debugging |
+| **[incident-responder](infrastructure/incident-responder.md)** | Critical outages | Immediate response, crisis management, escalation |
+| **[deployment-engineer](infrastructure/deployment-engineer.md)** | CI/CD, containerization | Docker, Kubernetes, pipeline configuration |
+| **[database-optimizer](data-ai/database-optimizer.md)** | Database performance | Query optimization, indexing, migration strategies |
 
 ### 📊 Analysis & Optimization
 
 | Agent | Best For | Example Use Cases |
 |-------|----------|-------------------|
-| **performance-engineer** | Application performance | Bottleneck analysis, caching strategies, optimization |
-| **security-auditor** | Security assessment | Vulnerability scanning, OWASP compliance, threat modeling |
-| **data-scientist** | Data analysis | SQL queries, BigQuery, insights and reporting |
-| **code-reviewer** | Code quality | Best practices, maintainability, architectural review |
+| **[performance-engineer](infrastructure/performance-engineer.md)** | Application performance | Bottleneck analysis, caching strategies, optimization |
+| **[security-auditor](security/security-auditor.md)** | Security assessment | Vulnerability scanning, OWASP compliance, threat modeling |
+| **[data-scientist](data-ai/data-scientist.md)** | Data analysis | SQL queries, BigQuery, insights and reporting |
+| **[code-reviewer](quality-testing/code-reviewer.md)** | Code quality | Best practices, maintainability, architectural review |
 
 ### 🧪 Quality Assurance
 
 | Agent | Best For | Example Use Cases |
 |-------|----------|-------------------|
-| **test-automator** | Testing strategy | Unit tests, integration tests, E2E test suites |
-| **debugger** | Bug investigation | Error analysis, test failures, troubleshooting |
-| **architect-reviewer** | Design validation | Architectural consistency, pattern compliance |
+| **[test-automator](quality-testing/test-automator.md)** | Testing strategy | Unit tests, integration tests, E2E test suites |
+| **[debugger](quality-testing/debugger.md)** | Bug investigation | Error analysis, test failures, troubleshooting |
+| **[architect-reviewer](quality-testing/architect-review.md)** | Design validation | Architectural consistency, pattern compliance |
 
 ## 📚 Best Practices
 
@@ -568,11 +645,11 @@ To contribute a new subagent to the collection:
 
 ### Most Commonly Used Agents
 
-1. **code-reviewer** - Quality assurance and best practices
-2. **backend-architect** - API and system design
-3. **frontend-developer** - UI/UX implementation
-4. **security-auditor** - Security validation and compliance
-5. **performance-engineer** - Optimization and bottleneck analysis
+1. **[code-reviewer](quality-testing/code-reviewer.md)** - Quality assurance and best practices
+2. **[backend-architect](development/backend-architect.md)** - API and system design
+3. **[frontend-developer](development/frontend-developer.md)** - UI/UX implementation
+4. **[security-auditor](security/security-auditor.md)** - Security validation and compliance
+5. **[performance-engineer](infrastructure/performance-engineer.md)** - Optimization and bottleneck analysis
 
 ### Essential Coordination Patterns
 
@@ -588,5 +665,96 @@ To contribute a new subagent to the collection:
 - ✅ Use explicit invocation strategically
 - ✅ Establish quality gates and validation patterns
 - ✅ Learn from agent coordination patterns
+
+### Real-World Agent-Organizer Workflow Example
+
+**User Request**: `/sc:implement` use agent-organizer to design and implement the ExportStep.tsx function, improve the UI/UX as well, based on the organizer, use the suitable agents for the task.
+
+**Total Execution Time**: ~30 minutes (1800 seconds)
+
+#### 1. Agent-Organizer Analysis & Team Assembly
+
+![Agent Organizer Analysis](_images/agent-organizer.png)
+
+The agent-organizer analyzed the project requirements and assembled a 3-agent team:
+
+- **backend-architect**: Export functionality and state management design
+- **frontend-developer**: UI/UX implementation and React component enhancement  
+- **test-automator**: Comprehensive testing and quality assurance
+
+**Analysis Completed**: Technology stack detection (React, TypeScript, Electron), architecture pattern recognition, and requirement extraction for a subtitle export system.
+
+#### 2. Backend Architecture Implementation
+
+![Backend Architect Implementation](_images/backend-architect.png)
+
+**backend-architect** implemented:
+
+- Complete export store with state management, progress tracking, and history
+- Format conversion utilities supporting SRT, VTT, ASS, and JSON formats
+- Electron IPC integration for file operations
+- **Performance**: 38 tool uses, 99.1k tokens, 7m 31.5s execution time
+
+#### 3. Frontend Development & UI/UX Enhancement
+
+![Frontend Developer Implementation](_images/frontend-developer.png)
+
+**frontend-developer** created:
+
+- Fully interactive ExportStep component with real event handlers and dynamic state
+- Real-time preview generation based on actual subtitle data
+- Progress tracking with cancellation support during export operations
+- Accessibility compliance (WCAG 2.1 AA) with ARIA labels and keyboard navigation
+- Responsive design for mobile and desktop with MUI theming
+- Advanced features: Keyboard shortcuts, copy to clipboard, fullscreen preview
+
+#### 4. Quality Assurance & Testing
+
+![Test Automator Implementation](_images/test-automator.png)
+
+**test-automator** delivered:
+
+- Comprehensive test coverage for format converters with edge cases
+- Test framework setup ready for Jest and React Testing Library
+- Accessibility and interaction testing approach demonstrated
+- Quality gates ensuring production readiness
+
+#### 5. Final Implementation Results
+
+![Final Output](_images/final-output.png)
+
+**Complete Feature Delivery**:
+
+- **8 Key Features**: Format selection, language options, export operations, real-time preview, export history, error handling, progress tracking, keyboard shortcuts
+- **4 Files Created/Modified**: Export store, format converters, enhanced UI component, test coverage
+- **Production Ready**: Seamless integration with existing CanToCap architecture
+
+**Key Features Implemented**:
+
+1. **Format Selection**: Dynamic format validation with visual warnings
+2. **Language Options**: Smart settings with availability statistics  
+3. **Export Operations**: Single and multi-format export with file dialogs
+4. **Real-time Preview**: Live content preview with copy and fullscreen functionality
+5. **Export History**: Persistent history with date grouping and file management
+6. **Error Handling**: User-friendly error messages and recovery mechanisms
+7. **Progress Tracking**: Real-time progress display with cancellation support
+8. **Keyboard Shortcuts**: Professional-grade keyboard accessibility
+
+#### 6. Live Demo
+
+![SRT Conversion Demo](_images/srt-convertion-demo.gif)
+
+The implementation transforms a static UI shell into a production-ready export system that integrates seamlessly with the existing CanToCap architecture while providing modern UX patterns and comprehensive functionality.
+
+**Performance Metrics**:
+
+- **Multi-Agent Coordination**: Seamless handoffs between specialized agents
+- **Quality Assurance**: Built-in validation and testing at each phase
+- **Production Ready**: Comprehensive feature set with accessibility compliance
+- **Time Efficiency**: 30 minutes for enterprise-grade implementation
+
+This demonstrates the power of agent-organizer orchestration: expert domain knowledge, coordinated workflow execution, and comprehensive quality assurance delivering production-ready results.
+
+---
 
 *Happy coding with your AI specialist team! 🚀*
