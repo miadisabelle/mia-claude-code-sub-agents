@@ -20,3 +20,8 @@ Thumbs.db
 venv
 node_modules
 .sass-cache
+
+logs
+log
+
+.claude

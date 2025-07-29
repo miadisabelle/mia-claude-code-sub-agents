@@ -1,6 +1,6 @@
 # Claude Code Subagents Collection
 
-A comprehensive collection of 32 specialized AI subagents for [Claude Code](https://docs.anthropic.com/en/docs/claude-code), designed to enhance development workflows with domain-specific expertise and intelligent automation.
+A comprehensive collection of 35 specialized AI subagents for [Claude Code](https://docs.anthropic.com/en/docs/claude-code), designed to enhance development workflows with domain-specific expertise and intelligent automation.
 
 ## 🚀 Overview
 
@@ -20,6 +20,7 @@ This repository contains a curated set of specialized subagents that extend Clau
 
 - **[backend-architect](backend-architect.md)** - Design RESTful APIs, microservice boundaries, and database schemas
 - **[frontend-developer](frontend-developer.md)** - Build React components, implement responsive layouts, and handle client-side state management
+- **[full-stack-developer](full-stack-developer.md)** - End-to-end web application development from UI to database with seamless integration
 - **[mobile-developer](mobile-developer.md)** - Develop React Native or Flutter apps with native integrations
 - **[graphql-architect](graphql-architect.md)** - Design GraphQL schemas, resolvers, and federation patterns
 - **[architect-reviewer](architect-review.md)** - Reviews code changes for architectural consistency and design patterns
@@ -48,6 +49,7 @@ This repository contains a curated set of specialized subagents that extend Clau
 - **[code-reviewer](code-reviewer.md)** - Expert code review for quality, security, and maintainability
 - **[security-auditor](security-auditor.md)** - Review code for vulnerabilities and ensure OWASP compliance
 - **[test-automator](test-automator.md)** - Create comprehensive test suites with unit, integration, and e2e tests
+- **[qa-expert](qa-expert.md)** - Comprehensive QA processes and testing strategies for quality assurance
 - **[performance-engineer](performance-engineer.md)** - Profile applications, optimize bottlenecks, and implement caching strategies
 - **[debugger](debugger.md)** - Debugging specialist for errors, test failures, and unexpected behavior
 
@@ -64,6 +66,7 @@ This repository contains a curated set of specialized subagents that extend Clau
 - **[api-documenter](api-documenter.md)** - Create OpenAPI/Swagger specs and write developer documentation
 - **[documentation-expert](documentation-expert.md)** - Professional technical writing and comprehensive documentation systems
 - **[payment-integration](payment-integration.md)** - Integrate Stripe, PayPal, and payment processors
+- **[product-manager](product-manager.md)** - Strategic product management with roadmap planning and stakeholder alignment
 - **[quant-analyst](quant-analyst.md)** - Build financial models, backtest trading strategies, and analyze market data
 - **[legacy-modernizer](legacy-modernizer.md)** - Refactor legacy codebases and implement gradual modernization
 - **[context-manager](context-manager.md)** - Manages context across multiple agents and long-running tasks
