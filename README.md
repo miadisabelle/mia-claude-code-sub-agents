@@ -153,38 +153,24 @@ ls ~/.claude/agents/*.md
 
 ### 🎭 Advanced: Agent-Organizer Auto-Dispatch Setup
 
-For users who want Claude Code to automatically use the agent-organizer for most complex tasks, you can enable the dispatch protocol:
+For complex projects requiring multi-agent coordination, you can enable the dispatch protocol in your **project root directory** (not globally):
 
 ```bash
-# Copy the CLAUDE.md dispatch protocol to your Claude config directory
-cp /path/to/agents/CLAUDE.md ~/.claude/CLAUDE.md
+# Copy CLAUDE.md to your PROJECT root directory (recommended)
+cp /path/to/agents/CLAUDE.md /path/to/your/project/CLAUDE.md
 ```
 
-**⚠️ Important Warnings:**
+**⚠️ Project-Scope Recommendation:**
 
-- **🔄 Auto-Orchestration**: With CLAUDE.md enabled, Claude Code will automatically invoke the agent-organizer for most non-trivial tasks
-- **💰 Token Usage**: Multi-agent workflows consume significantly more tokens than single-agent responses (2-5x increase typical)
-- **⏱️ Processing Time**: Orchestrated workflows take longer to complete due to multi-step agent coordination
-- **🎯 Precision vs Speed**: While results are more comprehensive and expert-driven, simple tasks may be over-engineered
+- **✅ Project-Specific**: Place CLAUDE.md in individual project roots for targeted orchestration
+- **❌ Global Scope**: Avoid placing in `~/.claude/CLAUDE.md` to prevent over-orchestration of simple tasks
+- **🎯 Selective Usage**: Enable only for projects requiring comprehensive multi-agent workflows
 
-**When CLAUDE.md is Active:**
+**Trade-offs to Consider:**
 
-- ✅ Complex projects get expert multi-agent analysis and implementation
-- ✅ Quality is higher due to specialized agent expertise and validation
-- ⚠️ Simple questions may trigger unnecessary agent orchestration
-- ⚠️ Token costs increase substantially for routine tasks
-
-**Recommended For:**
-
-- Professional development workflows requiring high-quality, expert-driven results
-- Complex projects where comprehensive analysis and multi-domain expertise is valuable
-- Users who prioritize quality and thoroughness over speed and token efficiency
-
-**Not Recommended For:**
-
-- Casual coding assistance or simple questions
-- Token-sensitive environments or usage limits
-- Quick prototyping or experimental work
+- **Quality vs Speed**: Multi-agent workflows provide expert results but take longer
+- **Token Efficiency**: 2-5x token usage for comprehensive analysis and implementation
+- **Complexity Matching**: Best for complex projects, may over-engineer simple tasks
 
 ## 🔧 Usage
 
@@ -228,68 +214,18 @@ Combine automatic and explicit invocation:
 
 ## 💡 Usage Examples
 
-### Single Agent Tasks
-
-#### 🔍 Code Quality & Review
+### Direct Agent Invocation
 
 ```bash
-"Use code-reviewer to analyze this component for best practices"
-"Have security-auditor check for OWASP compliance issues"
-"Get test-automator to create comprehensive test coverage"
-```
+# Single specialist tasks
+"Use code-reviewer to analyze this component"
+"Have security-auditor check for vulnerabilities"
+"Get backend-architect to design user authentication"
 
-#### 🏗️ Development Tasks  
-
-```bash
-"Get backend-architect to design a user authentication API"
-"Use frontend-developer to create a responsive dashboard layout"
-"Have mobile-developer build iOS/Android login screens"
-```
-
-#### ☁️ Infrastructure & Operations
-
-```bash
-"Have devops-incident-responder analyze these production logs"
-"Use cloud-architect to design a scalable AWS architecture"
-"Get deployment-engineer to set up CI/CD pipeline"
-```
-
-#### 📊 Data & AI
-
-```bash
-"Get data-scientist to analyze this customer behavior dataset"
-"Use ai-engineer to build a RAG system for document search"
-"Have ml-engineer create a recommendation engine"
-```
-
-### Multi-Agent Workflows
-
-#### 🚀 Feature Development Workflow
-
-```bash
-"Implement user authentication feature"
-# Automatically coordinates: backend-architect → frontend-developer → test-automator → security-auditor
-```
-
-#### ⚡ Performance Optimization Workflow  
-
-```bash
-"Optimize the checkout process performance"
-# Automatically coordinates: performance-engineer → database-optimizer → frontend-developer
-```
-
-#### 🚨 Production Incident Workflow
-
-```bash
-"Debug high memory usage in production"
-# Automatically coordinates: incident-responder → devops-incident-responder → performance-engineer
-```
-
-#### 🔄 Code Modernization Workflow
-
-```bash
-"Modernize this legacy Python application"
-# Automatically coordinates: legacy-modernizer → python-pro → test-automator → code-reviewer
+# Multi-agent workflows (automatic coordination)
+"Implement payment processing"  # → payment-integration → security-auditor
+"Optimize database performance"  # → database-optimizer → performance-engineer
+"Build responsive dashboard"     # → frontend-developer → test-automator
 ```
 
 ## 📋 Subagent Format
@@ -335,92 +271,12 @@ System prompt defining the subagent's specialized behavior, decision-making patt
 
 ## 🔄 Agent Orchestration Patterns
 
-Claude Code automatically coordinates agents using intelligent patterns based on task complexity and requirements:
+Claude Code automatically coordinates agents using these patterns:
 
-### 🔗 Sequential Workflows
-
-**Pattern**: `User Request → Agent A → Agent B → Agent C → Result`
-
-**Use Cases**: Feature development, step-by-step processes, dependent tasks
-
-```bash
-Example: "Build a new API feature"
-backend-architect → frontend-developer → test-automator → security-auditor
-```
-
-**Benefits**:
-
-- Ensures proper dependencies and order
-- Each agent builds on previous agent's work
-- Quality gates at each step
-
-### ⚡ Parallel Execution
-
-**Pattern**: `User Request → Agent A + Agent B (simultaneously) → Merge Results`
-
-**Use Cases**: Independent analysis, optimization tasks, research
-
-```bash
-Example: "Optimize application performance" 
-performance-engineer + database-optimizer → Combined recommendations
-```
-
-**Benefits**:
-
-- Faster execution for independent tasks
-- Multiple perspectives on complex problems
-- Comprehensive analysis coverage
-
-### 🎯 Conditional Branching
-
-**Pattern**: `User Request → Analysis → Route to appropriate specialist`
-
-**Use Cases**: Debugging, problem diagnosis, context-dependent solutions
-
-```bash
-Example: "Fix this bug"
-debugger (analyzes) → Routes to: backend-architect OR frontend-developer OR devops-incident-responder
-```
-
-**Benefits**:
-
-- Intelligent routing based on context analysis
-- Avoids unnecessary agent involvement
-- Specialized expertise for specific problems
-
-### ✅ Review & Validation
-
-**Pattern**: `Primary Agent → Review Agent → Final Result`
-
-**Use Cases**: Security validation, code review, quality assurance
-
-```bash
-Example: "Implement payment processing"
-payment-integration → security-auditor → Validated implementation
-```
-
-**Benefits**:
-
-- Built-in quality assurance
-- Expert validation of critical components
-- Risk mitigation for sensitive operations
-
-### 🔄 Iterative Refinement
-
-**Pattern**: `Agent A → Review → Agent A (refined) → Final Result`
-
-**Use Cases**: Optimization, improvement, iterative development
-
-```bash
-Example: "Improve code quality"
-code-reviewer → performance-engineer → code-reviewer → Optimized code
-```
-
-**Benefits**:
-
-- Progressive improvement
-- Multiple optimization passes
-- Convergence on optimal solutions
+- **Sequential**: `architect → implement → test → review` for dependent tasks
+- **Parallel**: `performance-engineer + database-optimizer` for independent analysis  
+- **Validation**: `primary-agent → security-auditor` for critical components
+- **Iterative**: `review → refine → validate` for optimization tasks
 
 ## 🎯 When to Use Which Agent
 
@@ -471,40 +327,11 @@ code-reviewer → performance-engineer → code-reviewer → Optimized code
 
 ## 📚 Best Practices
 
-### 🎯 Task Delegation Strategy
-
-1. **Trust Automatic Delegation** - Claude Code's intelligence excels at context analysis and optimal agent selection
-2. **Provide Rich Context** - Include tech stack, constraints, quality requirements, and project background
-3. **Start High-Level** - Begin with business objectives and let agents break down technical implementation
-4. **Leverage Agent Expertise** - Each agent is fine-tuned for their specific domain and decision patterns
-
-### 🔄 Multi-Agent Workflow Optimization
-
-5. **Enable Agent Coordination** - Let agents naturally collaborate rather than micromanaging the sequence
-6. **Validate Integration Points** - Review how different agents' outputs combine and interact
-7. **Provide Cross-Agent Context** - Ensure agents have necessary background from previous steps
-8. **Monitor Workflow Efficiency** - Identify patterns that work well for your project types
-
-### 🎛️ Strategic Explicit Control
-
-9. **Use Explicit Invocation Purposefully** - When you need specific expertise or want to override automatic selection
-10. **Design Review Chains** - Structure validation patterns like "architect → implement → security-review"
-11. **Combine Complementary Specialists** - Use agents with different perspectives to validate each other's work
-12. **Request Specific Analysis Depth** - Specify when you need surface-level vs. deep architectural analysis
-
-### 📈 Performance & Quality Optimization
-
-13. **Learn from Agent Patterns** - Observe which agent combinations work best for your use cases
-14. **Iterate on Complex Requirements** - Use agent feedback to refine and clarify requirements
-15. **Match Task Complexity** - Don't over-engineer simple tasks or under-resource complex ones
-16. **Establish Quality Gates** - Build review and validation into your standard workflows
-
-### 🧠 Advanced Usage Patterns
-
-17. **Use Context-Manager** - For long-running projects spanning multiple sessions
-18. **Leverage Documentation-Expert** - For maintaining project knowledge and onboarding
-19. **Implement Continuous Review** - Have code-reviewer and security-auditor as regular validation steps
-20. **Plan for Scalability** - Include cloud-architect and performance-engineer early in architecture decisions
+- **Trust Auto-Delegation**: Claude Code excels at context analysis and optimal agent selection
+- **Provide Rich Context**: Include tech stack, constraints, and project background
+- **Use Explicit Control**: Override automatic selection when you need specific expertise
+- **Establish Quality Gates**: Build review and validation into standard workflows
+- **Match Task Complexity**: Don't over-engineer simple tasks or under-resource complex ones
 
 ## 🤝 Contributing
 
@@ -550,96 +377,17 @@ To contribute a new subagent to the collection:
 
 ## 🛠️ Troubleshooting
 
-### Common Issues & Solutions
+**Common Issues:**
 
-#### 🤖 Agent Selection Issues
+- **Agent not selected**: Use domain-specific keywords or explicit invocation
+- **Unexpected selection**: Provide more context about tech stack and requirements
+- **Generic responses**: Request specific depth and include detailed constraints
+- **Conflicting advice**: Request reconciliation between different specialists
 
-**Problem**: Agent not being invoked automatically
+**Resources:**
 
-- **Solution**: Use domain-specific keywords (e.g., "performance issue" → performance-engineer)
-- **Solution**: Be explicit about task type (e.g., "review code" → code-reviewer)
-- **Solution**: Include relevant file extensions or technology names
-
-**Problem**: Unexpected agent selection
-
-- **Solution**: Provide more context about tech stack and project requirements
-- **Solution**: Use explicit invocation: "Use specific-agent to handle this task"
-- **Solution**: Add project context in your request
-
-#### 🔄 Multi-Agent Coordination
-
-**Problem**: Multiple agents producing conflicting advice
-
-- **Expected**: Different specialists may have different priorities (security vs. performance)
-- **Solution**: Request reconciliation: "Reconcile recommendations from security-auditor and performance-engineer"
-- **Solution**: Ask for prioritized recommendations based on your project constraints
-
-**Problem**: Agents seem disconnected or lack context
-
-- **Solution**: Provide comprehensive background in your request
-- **Solution**: Reference previous conversations: "Building on the API design from backend-architect..."
-- **Solution**: Use context-manager for long-running projects
-
-#### ⚡ Performance & Quality
-
-**Problem**: Agent responses too generic or surface-level
-
-- **Solution**: Request specific depth: "Provide detailed analysis with code examples"
-- **Solution**: Include specific constraints and requirements
-- **Solution**: Ask for expert-level recommendations
-
-**Problem**: Workflows taking too long or inefficient routing
-
-- **Solution**: Use more specific language to trigger optimal agents directly
-- **Solution**: Break complex requests into focused sub-tasks
-- **Solution**: Leverage parallel execution patterns for independent tasks
-
-### Getting Help & Support
-
-#### Self-Service Debugging
-
-1. **Review Agent Descriptions**: Check individual agent files for trigger conditions and capabilities
-2. **Test Explicit Invocation**: Use direct agent calls to verify functionality
-3. **Analyze Request Language**: Use more specific, domain-focused language
-4. **Provide Rich Context**: Include project background, tech stack, and constraints
-
-#### Advanced Troubleshooting
-
-- **Enable Verbose Mode**: Request detailed explanations of agent selection rationale
-- **Test Individual Agents**: Isolate issues by testing agents independently
-- **Review Workflow Patterns**: Ensure your use case matches expected orchestration patterns
-- **Check Agent Compatibility**: Verify agents work well together for your specific domain
-
-#### When to Seek Help
-
-- Persistent agent selection issues despite following guidelines
-- Unexpected behavior that affects project outcomes
-- Need for custom agent development or specialized domain coverage
-- Complex multi-agent workflows requiring optimization
-
-## 📖 Learn More
-
-### Official Documentation
-
-- **[Claude Code Documentation](https://docs.anthropic.com/en/docs/claude-code)** - Complete guide to Claude Code features and capabilities
-- **[Subagents Documentation](https://docs.anthropic.com/en/docs/claude-code/sub-agents)** - Official subagent system documentation
-- **[Claude Code GitHub](https://github.com/anthropics/claude-code)** - Source code and community contributions
-
-### Advanced Topics
-
-- **Multi-Agent Orchestration**: Understanding how agents coordinate and collaborate
-- **Custom Agent Development**: Creating specialized agents for your domain
-- **Workflow Optimization**: Designing efficient multi-agent workflows
-- **Context Management**: Maintaining state across long-running projects
-
-### Community Resources
-
-- **Agent Examples**: Real-world use cases and implementation patterns
-- **Best Practices Guide**: Community-driven recommendations for optimal usage
-- **Integration Patterns**: Common workflows and coordination strategies
-- **Performance Optimization**: Tips for efficient agent utilization
-
----
+- [Claude Code Documentation](https://docs.anthropic.com/en/docs/claude-code) - Official guide
+- [Subagents Documentation](https://docs.anthropic.com/en/docs/claude-code/sub-agents) - Agent system reference
 
 ## 📊 Quick Reference
 
@@ -665,95 +413,6 @@ To contribute a new subagent to the collection:
 - ✅ Use explicit invocation strategically
 - ✅ Establish quality gates and validation patterns
 - ✅ Learn from agent coordination patterns
-
-### Real-World Agent-Organizer Workflow Example
-
-**User Request**: `/sc:implement` use agent-organizer to design and implement the ExportStep.tsx function, improve the UI/UX as well, based on the organizer, use the suitable agents for the task.
-
-**Total Execution Time**: ~30 minutes (1800 seconds)
-
-#### 1. Agent-Organizer Analysis & Team Assembly
-
-![Agent Organizer Analysis](_images/agent-organizer.png)
-
-The agent-organizer analyzed the project requirements and assembled a 3-agent team:
-
-- **backend-architect**: Export functionality and state management design
-- **frontend-developer**: UI/UX implementation and React component enhancement  
-- **test-automator**: Comprehensive testing and quality assurance
-
-**Analysis Completed**: Technology stack detection (React, TypeScript, Electron), architecture pattern recognition, and requirement extraction for a subtitle export system.
-
-#### 2. Backend Architecture Implementation
-
-![Backend Architect Implementation](_images/backend-architect.png)
-
-**backend-architect** implemented:
-
-- Complete export store with state management, progress tracking, and history
-- Format conversion utilities supporting SRT, VTT, ASS, and JSON formats
-- Electron IPC integration for file operations
-- **Performance**: 38 tool uses, 99.1k tokens, 7m 31.5s execution time
-
-#### 3. Frontend Development & UI/UX Enhancement
-
-![Frontend Developer Implementation](_images/frontend-developer.png)
-
-**frontend-developer** created:
-
-- Fully interactive ExportStep component with real event handlers and dynamic state
-- Real-time preview generation based on actual subtitle data
-- Progress tracking with cancellation support during export operations
-- Accessibility compliance (WCAG 2.1 AA) with ARIA labels and keyboard navigation
-- Responsive design for mobile and desktop with MUI theming
-- Advanced features: Keyboard shortcuts, copy to clipboard, fullscreen preview
-
-#### 4. Quality Assurance & Testing
-
-![Test Automator Implementation](_images/test-automator.png)
-
-**test-automator** delivered:
-
-- Comprehensive test coverage for format converters with edge cases
-- Test framework setup ready for Jest and React Testing Library
-- Accessibility and interaction testing approach demonstrated
-- Quality gates ensuring production readiness
-
-#### 5. Final Implementation Results
-
-![Final Output](_images/final-output.png)
-
-**Complete Feature Delivery**:
-
-- **8 Key Features**: Format selection, language options, export operations, real-time preview, export history, error handling, progress tracking, keyboard shortcuts
-- **4 Files Created/Modified**: Export store, format converters, enhanced UI component, test coverage
-- **Production Ready**: Seamless integration with existing CanToCap architecture
-
-**Key Features Implemented**:
-
-1. **Format Selection**: Dynamic format validation with visual warnings
-2. **Language Options**: Smart settings with availability statistics  
-3. **Export Operations**: Single and multi-format export with file dialogs
-4. **Real-time Preview**: Live content preview with copy and fullscreen functionality
-5. **Export History**: Persistent history with date grouping and file management
-6. **Error Handling**: User-friendly error messages and recovery mechanisms
-7. **Progress Tracking**: Real-time progress display with cancellation support
-8. **Keyboard Shortcuts**: Professional-grade keyboard accessibility
-
-#### 6. Live Demo
-
-![SRT Conversion Demo](_images/srt-convertion-demo.gif)
-
-The implementation transforms a static UI shell into a production-ready export system that integrates seamlessly with the existing CanToCap architecture while providing modern UX patterns and comprehensive functionality.
-
-**Performance Metrics**:
-
-- **Multi-Agent Coordination**: Seamless handoffs between specialized agents
-- **Quality Assurance**: Built-in validation and testing at each phase
-- **Production Ready**: Comprehensive feature set with accessibility compliance
-- **Time Efficiency**: 30 minutes for enterprise-grade implementation
-
-This demonstrates the power of agent-organizer orchestration: expert domain knowledge, coordinated workflow execution, and comprehensive quality assurance delivering production-ready results.
 
 ---
 

@@ -1,7 +1,7 @@
 ---
 name: deployment-engineer
 description: Designs and implements robust CI/CD pipelines, container orchestration, and cloud infrastructure automation. Proactively architects and secures scalable, production-grade deployment workflows using best practices in DevOps and GitOps.
-tools: Read, Write, Edit, Grep, Glob, Bash, mcp__context7__resolve-library-id, mcp__context7__get-library-docs, mcp__sequential-thinking__sequentialthinking
+tools: Read, Write, Edit, MultiEdit, Grep, Glob, Bash, TodoWrite, mcp__context7__resolve-library-id, mcp__context7__get-library-docs, mcp__sequential-thinking__sequentialthinking
 ---
 
 # Deployment Engineer

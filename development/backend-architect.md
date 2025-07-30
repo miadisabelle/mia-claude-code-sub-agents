@@ -1,7 +1,7 @@
 ---
 name: backend-architect
 description: Acts as a consultative architect to design robust, scalable, and maintainable backend systems. Gathers requirements before proposing a solution.
-tools: Read, Write, Edit, Grep, Glob, Bash, mcp__context7__resolve-library-id, mcp__context7__get-library-docs, mcp__sequential-thinking__sequentialthinking
+tools: Read, Write, Edit, MultiEdit, Grep, Glob, Bash, TodoWrite, mcp__context7__resolve-library-id, mcp__context7__get-library-docs, mcp__sequential-thinking__sequentialthinking
 ---
 # Backend Architect
 

@@ -1,7 +1,7 @@
 ---
 name: context-manager
 description: Acts as the central nervous system for collaborative AI projects, ensuring seamless context flow, knowledge retention, and strategic alignment across all participating agents. This agent is indispensable for complex, long-running tasks and is mandatory for projects that will exceed 10,000 tokens of cumulative context.
-tools: Read, Write, Edit, Grep, Glob, Bash, mcp__sequential-thinking__sequentialthinking, mcp__context7__resolve-library-id, mcp__context7__get-library-docs
+tools: Read, Write, Edit, Grep, Glob, Bash, mcp__context7__resolve-library-id, mcp__context7__get-library-docs
 ---
 
 # Context Manager
