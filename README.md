@@ -123,7 +123,7 @@ These subagents are automatically available when placed in the `~/.claude/agents
 # Clone the repository to your Claude agents directory
 # Documents are base on the scaffold from https://github.com/wshobson/agents.git
 cd ~/.claude
-git clone https://github.com/lst97/claude-code-sub-agents.git
+git clone https://github.com/lst97/claude-code-sub-agents.git agents
 
 # Or if the directory already exists, pull the latest updates
 cd ~/.claude/agents
