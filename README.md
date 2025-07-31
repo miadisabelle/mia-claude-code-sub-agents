@@ -123,7 +123,7 @@ These subagents are automatically available when placed in the `~/.claude/agents
 # Clone the repository to your Claude agents directory
 # Documents are base on the scaffold from https://github.com/wshobson/agents.git
 cd ~/.claude
-git clone https://github.com/lst97/claude-code-sub-agents.git
+git clone https://github.com/lst97/claude-code-sub-agents.git agents
 
 # Or if the directory already exists, pull the latest updates
 cd ~/.claude/agents
@@ -413,6 +413,173 @@ To contribute a new subagent to the collection:
 - ✅ Use explicit invocation strategically
 - ✅ Establish quality gates and validation patterns
 - ✅ Learn from agent coordination patterns
+
+## 🎬 Examples
+
+These examples demonstrate real-world multi-agent coordination scenarios with detailed resource metrics to help you understand the token usage, execution time, and expected deliverables for different project complexities:
+
+- **Example 1**: Simple feature implementation (~300K tokens, ~17 minutes) - Shows efficient 4-agent coordination for focused component development
+- **Example 2**: Complex system implementation (~850K tokens, ~45 minutes) - Demonstrates enterprise-scale 7-agent orchestration with error recovery
+
+Both examples include actual token counts, execution times, and deliverable quality to help you plan and budget for multi-agent workflows in your projects.
+
+### Example 1: ExportStep Component Implementation
+
+**User Request**: `/sc:implement` use agent-organizer to design and implement the ExportStep.tsx function, improve the UI/UX as well
+
+#### Agent Orchestration Flow
+
+![Agent Orchestration](_images/example-1-agent-organizer.png)
+
+**Step 1: agent-organizer Analysis** (56.7K tokens, 1m 20s)
+
+- Analyzed existing project structure and Zustand stores
+- Created comprehensive 7-task implementation plan
+- Assembled 3-agent specialist team for coordinated execution
+
+![Backend Implementation](_images/example-1-backend-architect.png)
+
+**Step 2: backend-architect Implementation** (99.1K tokens, 7m 31s)
+
+- Designed complete export store architecture with state management
+- Implemented format conversion utilities for SRT, VTT, ASS, JSON formats
+- Integrated Electron IPC for seamless file operations
+
+![Frontend Enhancement](_images/example-1-frontend-developer.png)
+
+**Step 3: frontend-developer Enhancement** (84.3K tokens, 5m 29s)
+
+- Created fully interactive ExportStep component with real event handlers
+- Implemented real-time preview generation based on subtitle data
+- Added accessibility compliance (WCAG 2.1 AA) and responsive design
+
+![Testing Strategy](_images/example-1-test-automator.png)
+
+**Step 4: test-automator Quality Assurance** (61.4K tokens, 2m 46s)
+
+- Developed comprehensive test coverage for format converters
+- Set up Jest and React Testing Library framework
+- Created accessibility and interaction testing strategies
+
+#### Implementation Results
+
+![Final Output](_images/example-1-final-output.png)
+
+**Complete Feature Delivery**:
+
+- 🏗️ **Backend**: Export store with state management, format conversion utilities, Electron IPC integration
+- 🎨 **Frontend**: Interactive UI with real-time preview, accessibility compliance, keyboard navigation
+- ✅ **Testing**: Comprehensive test coverage with framework setup and validation
+
+![Live Demo](_images/example-1-caption-convertion-demo.gif)
+
+#### Project Metrics
+
+**Resource Usage**:
+
+- **Total Tokens**: ~301K tokens (agent-organizer: 56K, backend-architect: 99K, frontend-developer: 84K, test-automator: 61K)
+- **Total Time**: ~30 minutes execution time
+- **Team Size**: 4 agents (1 orchestrator + 3 specialists)
+- **Files Created/Modified**: 4 major files (stores, components, utilities, tests)
+
+**Efficiency Highlights**:
+
+- **Sequential Coordination**: Each agent built upon previous work seamlessly
+- **Quality Integration**: Production-ready export system with comprehensive functionality
+- **Zero Breaking Changes**: Enhanced existing architecture without disruption
+
+### Example 2: Complex Workspace Management System
+
+**User Request**: `/sc:design` implement complex workspace management with user config persistence, multiple workspaces, workspace groups, Discord-like UI with drag-and-drop functionality
+
+#### Phase 1: Comprehensive Design & Multi-Agent Assessment
+
+![Agent Organizer Design Phase](_images/example-2-agent-organizer.png)
+
+**5-Agent Team Assembly**: backend-architect, frontend-developer, electron-pro, ux-designer, test-automator
+
+**Design Deliverables**:
+
+- Complete TypeScript interfaces for Workspace, WorkspaceGroup, and configurations
+- IndexedDB storage strategy with migration from localStorage  
+- Discord-inspired UI specifications with drag-and-drop functionality
+- Auto-save mechanisms with conflict resolution and backup strategy
+- 5-phase implementation plan with quality gates
+
+![Phase 1 Working](_images/example-2-pharse-1-working.png)
+
+**Phase 1 Assessment Results**:
+
+![Phase 1 Complete](_images/example-2-pharse-1-complete.png)
+![Phase 1 Summary](_images/example-2-pharse-1-complete-summary.png)
+
+**Comprehensive Team Assessment** (5 agents, ~400K tokens total):
+
+- 🏗️ **Backend Architecture**: IndexedDB schema, <200ms startup, migration framework, auto-save strategy
+- 🎨 **Frontend Components**: Discord-inspired design, Material-UI integration, progressive enhancement
+- ⚡ **Electron Integration**: IPC architecture, security model, performance optimization
+- 🎭 **UX Design**: A+ UX Score (92/100), zero disruption, user journey validation  
+- ✅ **Testing Strategy**: 99.5% migration success, 4-layer testing pyramid, quality gates
+
+#### Complete Implementation Results
+
+![All Phases Complete](_images/example-2-all-pharse-complete.png)
+
+**Full 5-Phase Implementation**:
+
+- **Phase 1**: Assessment & Current State Analysis ✅
+- **Phase 2**: Architecture Finalization & Infrastructure ✅  
+- **Phase 3**: Core Implementation ✅
+- **Phase 4**: Integration & Migration ✅
+- **Phase 5**: Quality Assurance & Finalization ✅
+
+**Final Deliverables**:
+
+- Complete workspace management system with IndexedDB persistence
+- Discord-inspired UI with drag-and-drop workspace organization
+- Multi-workspace support with workspace groups
+- Seamless migration from existing localStorage system
+- Comprehensive test coverage and error recovery mechanisms
+
+#### Resource Metrics & Performance
+
+**Total Project Metrics**:
+
+- **Tokens Used**: ~900K tokens across all phases and error resolution
+- **Time Spent**: ~120 minutes total execution time
+- **Agents Involved**: 7 specialized agents (5 primary + 2 error resolution)
+- **Lines of Code**: ~2,400 lines across 15+ files
+- **Test Coverage**: 99.5% with comprehensive edge case handling (Should be hallucination)
+
+#### Build Error Resolution with Nested Agent Coordination
+
+![Build Error Detection](_images/example-2-build-error.png)
+
+**Second User Prompt**: `@agent-code-reviewer-pro` the application have build error please find all the build errors and ask the related sub agent to fix it. `@agent-agent-organizer`
+
+![Nested Sub-Agent Coordination](_images/example-2-nested-sub-agents.png)
+
+**Error Resolution Flow**:
+
+1. **code-reviewer-pro** (68.5K tokens, 5m 26s): Identified critical TypeScript syntax errors
+2. **agent-organizer** coordination: Systematic build error fixes with **typescript-pro**
+3. **Nested delegation**: Specialized agents called within agent workflows for targeted fixes
+
+**Error Resolution Efficiency**:
+
+- **Detection**: ~5m with code-reviewer-pro
+- **Coordination**: Instant agent-organizer response
+- **Fix Implementation**: ~30m minutes with nested typescript-pro agent
+- **Build Success**: Zero remaining errors after systematic fixes
+- **Challenging Runtime ERROR** Runtime error occur and it require manuel debugging and instruction
+
+### Key Multi-Agent Benefits
+
+- **🧠 Intelligent Orchestration**: agent-organizer coordinated 5+ agents across complex 5-phase implementation
+- **🔧 Nested Agent Support**: Error resolution through coordinated sub-agent delegation within workflows  
+- **📊 Enterprise-Scale Quality**: 850K tokens of comprehensive analysis, design, and implementation
+- **⚡ Rapid Error Recovery**: Build errors resolved in <8 minutes through specialized agent coordination
+- **🎯 Domain Expertise**: Each agent contributed specialized knowledge (storage architecture, UX design, TypeScript fixes)
 
 ---
 
