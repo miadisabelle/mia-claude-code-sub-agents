@@ -194,3 +194,88 @@ graph TD
 - Action: Re-run agent-organizer for comprehensive multi-domain planning
 
 This approach ensures efficient follow-up handling while maintaining the structured, expert-driven approach that makes the agent system effective.
+
+## 7. The Context Manager: Project Intelligence System
+
+### Purpose and Role
+
+The **context-manager** serves as the central nervous system for multi-agent coordination, acting as a specialized agent that maintains real-time awareness of your project's structure, purpose, and evolution. Think of it as the project's "memory" that ensures all agents work with accurate, up-to-date information.
+
+### Key Capabilities
+
+- **Intelligent Project Mapping**: Creates and maintains a comprehensive JSON knowledge graph (`context-manager.json`) of your entire project structure
+- **Incremental Updates**: Efficiently tracks changes without unnecessary full scans, optimizing performance for large projects
+- **Context Distribution**: Provides tailored project briefings to other agents based on their specific needs
+- **Activity Logging**: Maintains an audit trail of all agent activities and file modifications
+- **Cross-Agent Communication**: Facilitates seamless information sharing between specialized agents
+
+### When to Use the Context Manager
+
+The context-manager is **automatically integrated** into multi-agent workflows when using the agent-organizer. However, you may want to explicitly invoke it for:
+
+#### **Project Onboarding**
+
+- Initial project analysis and structure mapping
+- Understanding legacy codebases or inherited projects
+- Creating comprehensive project documentation
+
+#### **Knowledge Queries**
+
+- "Where are the authentication routes defined?"
+- "What's the purpose of the /utils directory?"
+- "Which files were recently modified by other agents?"
+
+#### **Multi-Agent Coordination**
+
+- When multiple agents need to work on related parts of the codebase
+- During complex refactoring that spans multiple domains
+- For maintaining consistency across team-based development
+
+### Integration with Agent Workflows
+
+The context-manager uses a standardized communication protocol:
+
+```json
+{
+  "requesting_agent": "agent-name",
+  "request_type": "get_task_briefing",
+  "payload": {
+    "query": "Initial briefing required for [task]. Provide overview of [relevant areas]."
+  }
+}
+```
+
+**Response Format:**
+
+```json
+{
+  "response_to": "agent-name",
+  "status": "success",
+  "briefing": {
+    "summary": "Concise project context summary",
+    "relevant_paths": ["/path/to/relevant/files"],
+    "file_purposes": {"directory": "purpose description"},
+    "related_activity": [{"agent": "name", "summary": "recent work"}]
+  }
+}
+```
+
+### Benefits for Complex Projects
+
+- **🎯 Targeted Context**: Agents receive only relevant information for their specific tasks
+- **⚡ Performance**: Incremental updates prevent redundant scanning of large codebases  
+- **🔄 Consistency**: All agents work from the same, synchronized understanding of the project
+- **📊 Visibility**: Track what changes were made by which agents and when
+- **🧠 Memory**: Persistent project knowledge that survives across sessions
+
+### Example Workflow Integration
+
+When you invoke the agent-organizer for a complex task, here's how context-manager fits in:
+
+1. **Agent-organizer** consults **context-manager** for project understanding
+2. **Context-manager** provides tailored briefings to each specialized agent
+3. Specialized agents work with accurate, current project context
+4. Agents report back to **context-manager** upon task completion
+5. **Context-manager** updates project knowledge and activity logs
+
+This creates a sophisticated project intelligence system that grows smarter with each interaction, ensuring optimal coordination and preventing agents from working with outdated or incomplete information.

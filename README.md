@@ -1,6 +1,6 @@
 # Claude Code Subagents Collection
 
-A comprehensive collection of 35 specialized AI subagents for [Claude Code](https://docs.anthropic.com/en/docs/claude-code), designed to enhance development workflows with domain-specific expertise and intelligent automation.
+A comprehensive collection of 33 specialized AI subagents for [Claude Code](https://docs.anthropic.com/en/docs/claude-code), designed to enhance development workflows with domain-specific expertise and intelligent automation.
 
 ## 🚀 Overview
 
@@ -81,10 +81,6 @@ Agents are now organized into logical categories for easier navigation:
 - **[ml-engineer](data-ai/ml-engineer.md)** - Implement ML pipelines, model serving, and feature engineering
 - **[prompt-engineer](data-ai/prompt-engineer.md)** - Optimizes prompts for LLMs and AI systems
 
-**Financial Analytics**
-
-- **[quant-analyst](data-ai/quant-analyst.md)** - Build financial models, backtest trading strategies, and analyze market data
-
 ### 🛡️ [Security](security/)
 
 - **[security-auditor](security/security-auditor.md)** - Review code for vulnerabilities and ensure OWASP compliance
@@ -93,8 +89,6 @@ Agents are now organized into logical categories for easier navigation:
 
 - **[api-documenter](specialization/api-documenter.md)** - Create OpenAPI/Swagger specs and write developer documentation
 - **[documentation-expert](specialization/documentation-expert.md)** - Professional technical writing and comprehensive documentation systems
-- **[context-manager](specialization/context-manager.md)** - Manages context across multiple agents and long-running tasks
-- **[payment-integration](specialization/payment-integration.md)** - Integrate Stripe, PayPal, and payment processors
 
 ### 💼 [Business](business/)
 
@@ -150,6 +144,76 @@ ls ~/.claude/agents/*.md
 # Check Claude Code recognizes the agents (run in Claude Code)
 # "List all available subagents"
 ```
+
+### 🔧 MCP Server Configuration (Required for Full Performance)
+
+To enable optimal performance with specialized MCP (Model Context Protocol) servers that enhance agent capabilities, add the following configuration to your **global** Claude settings file (`~/.claude.json`):
+
+```json
+"mcpServers": {
+  "sequential-thinking": {
+    "type": "stdio",
+    "command": "npx",
+    "args": [
+      "-y",
+      "@modelcontextprotocol/server-sequential-thinking"
+    ],
+    "env": {}
+  },
+  "context7": {
+    "type": "stdio",
+    "command": "npx",
+    "args": [
+      "-y",
+      "@upstash/context7-mcp"
+    ],
+    "env": {}
+  },
+  "magic": {
+    "type": "stdio",
+    "command": "npx",
+    "args": [
+      "-y",
+      "@21st-dev/magic@latest",
+      "API_KEY=\"api-key\"" // API key is required
+    ],
+    "env": {}
+  },
+  "playwright": {
+    "type": "stdio",
+    "command": "npx",
+    "args": [
+      "@playwright/mcp@latest"
+    ],
+    "env": {}
+  },
+  "filesystem": {
+    "command": "npx",
+    "args": [
+      "-y",
+      "@modelcontextprotocol/server-filesystem",
+      "/your/allowed/path" // please add your path here
+    ]
+  },
+  "puppeteer": {
+    "command": "npx",
+    "args": [
+      "-y",
+      "puppeteer-mcp-server"
+    ],
+    "env": {}
+  }
+}
+```
+
+**MCP Server Benefits:**
+
+- **sequential-thinking**: Enhanced multi-step reasoning and complex analysis
+- **context7**: Access to up-to-date documentation and framework patterns
+- **magic**: Advanced UI component generation and design system integration
+- **playwright**: Cross-browser testing and E2E automation capabilities
+
+**Note**: These MCP servers significantly enhance agent capabilities but are not strictly required for basic functionality.
 
 ### 🎭 Advanced: Agent-Organizer Auto-Dispatch Setup
 
@@ -216,16 +280,64 @@ Combine automatic and explicit invocation:
 
 ### Direct Agent Invocation
 
-```bash
-# Single specialist tasks
-"Use code-reviewer to analyze this component"
-"Have security-auditor check for vulnerabilities"
-"Get backend-architect to design user authentication"
+When not using agent-organizer, specify the exact agent needed for your task:
 
-# Multi-agent workflows (automatic coordination)
-"Implement payment processing"  # → payment-integration → security-auditor
-"Optimize database performance"  # → database-optimizer → performance-engineer
-"Build responsive dashboard"     # → frontend-developer → test-automator
+```bash
+# Development Tasks
+"Use backend-architect to design a REST API for user management"
+"Have frontend-developer create a responsive login form component"
+"Get python-pro to implement async data processing with proper error handling"
+"Have react-pro optimize this component for performance and add proper TypeScript types"
+"Use typescript-pro to refactor this module with advanced type safety"
+
+# Code Quality & Review
+"Use code-reviewer to analyze this pull request for best practices"
+"Have architect-reviewer check if this change maintains architectural consistency"
+"Get debugger to investigate why this test is failing intermittently"
+
+# Security & Performance
+"Have security-auditor scan this authentication module for vulnerabilities"
+"Use performance-engineer to identify bottlenecks in this API endpoint"
+"Get database-optimizer to improve these slow queries"
+
+# Testing & QA
+"Use test-automator to create comprehensive tests for this user service"
+"Have qa-expert design a testing strategy for this new feature"
+
+# Infrastructure & Deployment
+"Get devops-incident-responder to investigate this production deployment failure"
+"Use cloud-architect to design scalable infrastructure for this microservice"
+"Have deployment-engineer set up CI/CD pipeline for this repository"
+
+# Data & AI
+"Use data-scientist to analyze user behavior patterns in this dataset"
+"Have ai-engineer implement a RAG system for document search"
+"Get ml-engineer to deploy this trained model to production"
+
+# Documentation & Specialization
+"Use documentation-expert to create comprehensive API documentation"
+"Have api-documenter generate OpenAPI specs for these endpoints"
+
+# Multi-Agent Coordination Examples
+"Use backend-architect to design the API, then have security-auditor review it"
+"Get frontend-developer to build the component, then use test-automator for coverage"
+"Have database-optimizer improve queries, then performance-engineer validate results"
+```
+
+### Agent Communication Protocol Examples
+
+Each agent uses a standardized communication protocol with agent-specific context requests. Here are examples:
+
+#### Frontend Development
+
+```json
+{
+  "requesting_agent": "frontend-developer",
+  "request_type": "get_task_briefing",
+  "payload": {
+    "query": "Initial briefing required for UI component development. Provide overview of existing React project structure, design system, component library, and relevant frontend files."
+  }
+}
 ```
 
 ## 📋 Subagent Format
