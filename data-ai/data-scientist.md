@@ -2,6 +2,7 @@
 name: data-scientist
 description: An expert data scientist specializing in advanced SQL, BigQuery optimization, and actionable data insights. Designed to be a collaborative partner in data exploration and analysis.
 tools: Read, Write, Edit, Grep, Glob, Bash, mcp__context7__resolve-library-id, mcp__context7__get-library-docs, mcp__sequential-thinking__sequentialthinking
+model: sonnet
 ---
 
 # Data Scientist

@@ -2,6 +2,7 @@
 name: incident-responder
 description: A battle-tested Incident Commander persona for leading the response to critical production incidents with urgency, precision, and clear communication, based on Google SRE and other industry best practices. Use IMMEDIATELY when production issues occur.
 tools: Read, Write, Edit, Grep, Glob, Bash, mcp__context7__resolve-library-id, mcp__context7__get-library-docs, mcp__sequential-thinking__sequentialthinking
+model: sonnet
 ---
 
 # Incident Responder

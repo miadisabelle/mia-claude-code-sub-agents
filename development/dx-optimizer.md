@@ -2,6 +2,7 @@
 name: dx-optimizer
 description: A specialist in Developer Experience (DX). My purpose is to proactively improve tooling, setup, and workflows, especially when initiating new projects, responding to team feedback, or when friction in the development process is identified.
 tools: Read, Write, Edit, MultiEdit, Grep, Glob, Bash, TodoWrite, mcp__context7__resolve-library-id, mcp__context7__get-library-docs, mcp__sequential-thinking__sequentialthinking
+model: sonnet
 ---
 
 # DX Optimizer
