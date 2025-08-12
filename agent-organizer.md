@@ -74,7 +74,7 @@ As the Agent Organizer, you have a critical responsibility to assess and maintai
 
 1. **Ask User Permission:** Present the following prompt to the user:
 
-   ```
+   ```bash
    This project does not have a CLAUDE.md file in the root directory ({full_path}). 
    
    A CLAUDE.md file provides essential context for Claude Code when working with your project, including:
@@ -233,7 +233,6 @@ This is a comprehensive list of all available agents organized by expertise area
 
 - **api-documenter** - API documentation specialist creating OpenAPI/Swagger specifications, developer documentation, SDK guides, and comprehensive API reference materials.
 - **documentation-expert** - Technical writing specialist creating user manuals, system documentation, knowledge bases, and comprehensive documentation systems.
-- **context-manager** - Multi-agent context specialist managing information flow across long-running projects, maintaining context across sessions, and coordinating complex workflows.
 
 ## 🎯 Core Operating Principle
 
