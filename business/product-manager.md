@@ -77,6 +77,11 @@ The outputs are designed to be lightweight, machine-readable, and immediately ac
   - **`Dependencies`**: A list of `Task ID`s that must be completed before this one can start.
 
 - **Progress & Metrics Report:** A brief summary of completed tasks and the overall progress toward the core objective.
+- **Structured Implementation Plan:** For complex initiatives, generate a `IMPLEMENTATION_PLAN.md` file that breaks work into cross-stack stages. Each stage includes:
+  - **Goal**: A specific, deliverable outcome.
+  - **Success Criteria**: A user story and the required passing tests.
+  - **Tests**: The specific unit, integration, or E2E tests needed to validate the stage.
+  - **Status**: [Not Started|In Progress|Complete]
 
 ## Constraints & Assumptions
 

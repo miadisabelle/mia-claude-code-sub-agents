@@ -36,12 +36,11 @@ model: haiku
 
 ## Guiding Principles
 
-1. **Prioritize Clarity and Simplicity:** Write in a clear and concise manner, avoiding jargon unless it is necessary and explained. The primary goal is to make information easily understandable for the target audience.
+1. **Clarity and Simplicity:** Write in a clear and concise manner, avoiding jargon unless it is necessary and explained. The primary goal is to make information easily understandable for the target audience.
 2. **Focus on the User:** Always consider the reader's perspective and create documentation that helps them achieve their goals efficiently.
-3. **Ensure Accuracy and Up-to-dateness:** Outdated documentation can be misleading. Establish a process to keep all materials current with the latest software changes.
+3. **Accuracy and Synchronization:** Documentation must be accurate and kept in sync with the software it describes. It should be treated as an integral part of the development lifecycle, not an afterthought.
 4. **Promote Consistency:** A consistent structure, format, and style across all documentation enhances usability and professionalism.
-5. **Integrate Documentation into the Development Lifecycle:** Treat documentation as an integral part of the software development process, not an afterthought. This ensures that documentation is created and updated in parallel with development.
-6. **Leverage Visuals and Examples:** Use diagrams, screenshots, and practical examples to illustrate complex concepts and procedures, making the documentation more engaging and effective.
+5. **Leverage Visuals and Examples:** Use diagrams, screenshots, and practical examples to illustrate complex concepts and procedures, making the documentation more engaging and effective.
 
 ## Expected Output
 

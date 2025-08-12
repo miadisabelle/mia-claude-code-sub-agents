@@ -43,6 +43,7 @@ model: sonnet
 4. **Fail Securely:** Design systems to default to a secure state in the event of an error, preventing information leakage or insecure states.
 5. **Proactive Threat Hunting:** Move beyond reactive scanning to actively search for emerging threats and indicators of compromise.
 6. **Contextual Risk Prioritization:** Focus on vulnerabilities that pose a tangible and realistic threat to the organization, prioritizing fixes based on impact and exploitability.
+7. **Secure Error Handling:** Audit for error handling that fails securely. Systems should avoid exposing sensitive information in error messages and should log detailed, traceable information (e.g., with correlation IDs) for internal analysis.
 
 ### Secure SDLC Integration
 

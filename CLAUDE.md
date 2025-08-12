@@ -135,7 +135,7 @@ When multiple solutions exist, prioritize in this order:
 
 ---
 
-# Agent Dispatch Protocol Template (Once the Agent-Organizer sub agent being called)
+# Agent Dispatch Protocol (Follow once the Agent-Organizer sub agent being called or used)
 
 ## Philosophy
 
