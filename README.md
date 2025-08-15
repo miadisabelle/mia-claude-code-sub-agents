@@ -18,85 +18,85 @@ This repository contains a curated set of specialized subagents that extend Clau
 
 Agents are now organized into logical categories for easier navigation:
 
-### 🏗️ [Development](development/)
+### 🏗️ [Development](agents/development/)
 
 **Frontend & UI Specialists**
 
-- **[frontend-developer](development/frontend-developer.md)** - Build React components, implement responsive layouts, and handle client-side state management
-- **[ui-designer](development/ui-designer.md)** - Creative UI design focused on user-friendly interfaces
-- **[ux-designer](development/ux-designer.md)** - User experience design and interaction optimization
-- **[react-pro](development/react-pro.md)** - Expert React development with hooks, performance optimization, and best practices
-- **[nextjs-pro](development/nextjs-pro.md)** - Next.js specialist for SSR, SSG, and full-stack React applications
+- **[frontend-developer](agents/development/frontend-developer.md)** - Build React components, implement responsive layouts, and handle client-side state management
+- **[ui-designer](agents/development/ui-designer.md)** - Creative UI design focused on user-friendly interfaces
+- **[ux-designer](agents/development/ux-designer.md)** - User experience design and interaction optimization
+- **[react-pro](agents/development/react-pro.md)** - Expert React development with hooks, performance optimization, and best practices
+- **[nextjs-pro](agents/development/nextjs-pro.md)** - Next.js specialist for SSR, SSG, and full-stack React applications
 
 **Backend & Architecture**
 
-- **[backend-architect](development/backend-architect.md)** - Design RESTful APIs, microservice boundaries, and database schemas
-- **[full-stack-developer](development/full-stack-developer.md)** - End-to-end web application development from UI to database with seamless integration
+- **[backend-architect](agents/development/backend-architect.md)** - Design RESTful APIs, microservice boundaries, and database schemas
+- **[full-stack-developer](agents/development/full-stack-developer.md)** - End-to-end web application development from UI to database with seamless integration
 
 **Language Specialists**
 
-- **[python-pro](development/python-pro.md)** - Write idiomatic Python code with advanced features and optimizations
-- **[golang-pro](development/golang-pro.md)** - Write idiomatic Go code with goroutines, channels, and interfaces
-- **[typescript-pro](development/typescript-pro.md)** - Advanced TypeScript development with type safety and modern patterns
+- **[python-pro](agents/development/python-pro.md)** - Write idiomatic Python code with advanced features and optimizations
+- **[golang-pro](agents/development/golang-pro.md)** - Write idiomatic Go code with goroutines, channels, and interfaces
+- **[typescript-pro](agents/development/typescript-pro.md)** - Advanced TypeScript development with type safety and modern patterns
 
 **Platform & Mobile**
 
-- **[mobile-developer](development/mobile-developer.md)** - Develop React Native or Flutter apps with native integrations
-- **[electron-pro](development/electorn-pro.md)** - Electron desktop application development and cross-platform solutions
+- **[mobile-developer](agents/development/mobile-developer.md)** - Develop React Native or Flutter apps with native integrations
+- **[electron-pro](agents/development/electorn-pro.md)** - Electron desktop application development and cross-platform solutions
 
 **Developer Experience**
 
-- **[dx-optimizer](development/dx-optimizer.md)** - Developer Experience specialist that improves tooling, setup, and workflows
-- **[legacy-modernizer](development/legacy-modernizer.md)** - Refactor legacy codebases and implement gradual modernization
+- **[dx-optimizer](agents/development/dx-optimizer.md)** - Developer Experience specialist that improves tooling, setup, and workflows
+- **[legacy-modernizer](agents/development/legacy-modernizer.md)** - Refactor legacy codebases and implement gradual modernization
 
-### ☁️ [Infrastructure](infrastructure/)
+### ☁️ [Infrastructure](agents/infrastructure/)
 
-- **[cloud-architect](infrastructure/cloud-architect.md)** - Design AWS/Azure/GCP infrastructure and optimize cloud costs
-- **[deployment-engineer](infrastructure/deployment-engineer.md)** - Configure CI/CD pipelines, Docker containers, and cloud deployments
-- **[devops-incident-responder](infrastructure/devops-incident-responder.md)** - Debug production issues, analyze logs, and fix deployment failures
-- **[incident-responder](infrastructure/incident-responder.md)** - Handles production incidents with urgency and precision
-- **[performance-engineer](infrastructure/performance-engineer.md)** - Profile applications, optimize bottlenecks, and implement caching strategies
+- **[cloud-architect](agents/infrastructure/cloud-architect.md)** - Design AWS/Azure/GCP infrastructure and optimize cloud costs
+- **[deployment-engineer](agents/infrastructure/deployment-engineer.md)** - Configure CI/CD pipelines, Docker containers, and cloud deployments
+- **[devops-incident-responder](agents/infrastructure/devops-incident-responder.md)** - Debug production issues, analyze logs, and fix deployment failures
+- **[incident-responder](agents/infrastructure/incident-responder.md)** - Handles production incidents with urgency and precision
+- **[performance-engineer](agents/infrastructure/performance-engineer.md)** - Profile applications, optimize bottlenecks, and implement caching strategies
 
-### 🔍 [Quality & Testing](quality-testing/)
+### 🔍 [Quality & Testing](agents/quality-testing/)
 
-- **[code-reviewer](quality-testing/code-reviewer.md)** - Expert code review for quality, security, and maintainability
-- **[architect-reviewer](quality-testing/architect-review.md)** - Reviews code changes for architectural consistency and design patterns
-- **[qa-expert](quality-testing/qa-expert.md)** - Comprehensive QA processes and testing strategies for quality assurance
-- **[test-automator](quality-testing/test-automator.md)** - Create comprehensive test suites with unit, integration, and e2e tests
-- **[debugger](quality-testing/debugger.md)** - Debugging specialist for errors, test failures, and unexpected behavior
+- **[code-reviewer](agents/quality-testing/code-reviewer.md)** - Expert code review for quality, security, and maintainability
+- **[architect-reviewer](agents/quality-testing/architect-review.md)** - Reviews code changes for architectural consistency and design patterns
+- **[qa-expert](agents/quality-testing/qa-expert.md)** - Comprehensive QA processes and testing strategies for quality assurance
+- **[test-automator](agents/quality-testing/test-automator.md)** - Create comprehensive test suites with unit, integration, and e2e tests
+- **[debugger](agents/quality-testing/debugger.md)** - Debugging specialist for errors, test failures, and unexpected behavior
 
-### 📊 [Data & AI](data-ai/)
+### 📊 [Data & AI](agents/data-ai/)
 
 **Data Engineering & Analytics**
 
-- **[data-engineer](data-ai/data-engineer.md)** - Build ETL pipelines, data warehouses, and streaming architectures
-- **[data-scientist](data-ai/data-scientist.md)** - Data analysis expert for SQL queries, BigQuery operations, and data insights
-- **[database-optimizer](data-ai/database-optimizer.md)** - Optimize SQL queries, design efficient indexes, and handle database migrations
-- **[postgres-pro](data-ai/postgres-pro.md)** - PostgreSQL database expert for advanced queries and optimizations
-- **[graphql-architect](data-ai/graphql-architect.md)** - Design GraphQL schemas, resolvers, and federation patterns
+- **[data-engineer](agents/data-ai/data-engineer.md)** - Build ETL pipelines, data warehouses, and streaming architectures
+- **[data-scientist](agents/data-ai/data-scientist.md)** - Data analysis expert for SQL queries, BigQuery operations, and data insights
+- **[database-optimizer](agents/data-ai/database-optimizer.md)** - Optimize SQL queries, design efficient indexes, and handle database migrations
+- **[postgres-pro](agents/data-ai/postgres-pro.md)** - PostgreSQL database expert for advanced queries and optimizations
+- **[graphql-architect](agents/data-ai/graphql-architect.md)** - Design GraphQL schemas, resolvers, and federation patterns
 
 **AI & Machine Learning**
 
-- **[ai-engineer](data-ai/ai-engineer.md)** - Build LLM applications, RAG systems, and prompt pipelines
-- **[ml-engineer](data-ai/ml-engineer.md)** - Implement ML pipelines, model serving, and feature engineering
-- **[prompt-engineer](data-ai/prompt-engineer.md)** - Optimizes prompts for LLMs and AI systems
+- **[ai-engineer](agents/data-ai/ai-engineer.md)** - Build LLM applications, RAG systems, and prompt pipelines
+- **[ml-engineer](agents/data-ai/ml-engineer.md)** - Implement ML pipelines, model serving, and feature engineering
+- **[prompt-engineer](agents/data-ai/prompt-engineer.md)** - Optimizes prompts for LLMs and AI systems
 
-### 🛡️ [Security](security/)
+### 🛡️ [Security](agents/security/)
 
-- **[security-auditor](security/security-auditor.md)** - Review code for vulnerabilities and ensure OWASP compliance
+- **[security-auditor](agents/security/security-auditor.md)** - Review code for vulnerabilities and ensure OWASP compliance
 
-### 🎯 [Specialization](specialization/)
+### 🎯 [Specialization](agents/specialization/)
 
-- **[api-documenter](specialization/api-documenter.md)** - Create OpenAPI/Swagger specs and write developer documentation
-- **[documentation-expert](specialization/documentation-expert.md)** - Professional technical writing and comprehensive documentation systems
+- **[api-documenter](agents/specialization/api-documenter.md)** - Create OpenAPI/Swagger specs and write developer documentation
+- **[documentation-expert](agents/specialization/documentation-expert.md)** - Professional technical writing and comprehensive documentation systems
 
-### 💼 [Business](business/)
+### 💼 [Business](agents/business/)
 
-- **[product-manager](business/product-manager.md)** - Strategic product management with roadmap planning and stakeholder alignment
+- **[product-manager](agents/business/product-manager.md)** - Strategic product management with roadmap planning and stakeholder alignment
 
 ### 🎭 Meta-Orchestration
 
-- **[agent-organizer](agent-organizer.md)** - Master orchestrator for complex, multi-agent tasks. Analyzes project requirements, assembles optimal agent teams, and manages collaborative workflows for comprehensive project execution.
+- **[agent-organizer](agents/agent-organizer.md)** - Master orchestrator for complex, multi-agent tasks. Analyzes project requirements, assembles optimal agent teams, and manages collaborative workflows for comprehensive project execution.
 
 **Key Capabilities:**
 
@@ -111,26 +111,15 @@ Agents are now organized into logical categories for easier navigation:
 
 ### Quick Setup
 
-These subagents are automatically available when placed in the `~/.claude/agents/` directory. Claude Code will automatically detect and load them on startup.
-
-```bash
-# Clone the repository to your Claude agents directory
-# Documents are base on the scaffold from https://github.com/wshobson/agents.git
-cd ~/.claude
-git clone https://github.com/lst97/claude-code-sub-agents.git agents
-
-# Or if the directory already exists, pull the latest updates
-cd ~/.claude/agents
-git pull origin main
-```
-
-### Manual Installation
+### Manual Installation (Recommend)
 
 Alternatively, you can manually copy individual agent files:
 
 ```bash
+# Prevent replacing documents from other providers
+mkdir ~/.claude/agents/lst97
 # Copy specific agents to your Claude agents directory
-cp /path/to/agents/*.md ~/.claude/agents/
+cp /path/to/agents/*.md ~/.claude/agents/lst97
 ```
 
 ### Verification
@@ -139,10 +128,25 @@ To verify agents are loaded correctly:
 
 ```bash
 # List all available agents
-ls ~/.claude/agents/*.md
+ls ~/.claude/agents/lst97/*.md
 
 # Check Claude Code recognizes the agents (run in Claude Code)
 # "List all available subagents"
+```
+
+### Quick Installation
+
+These subagents are automatically available when placed in the `~/.claude/agents/` directory. Claude Code will automatically detect and load them on startup. This will enable the CLAUDE.md to be available in global scope, may also conflict with other repository.
+
+```bash
+# Clone the repository to your Claude agents directory
+# Documents are base on the scaffold from https://github.com/wshobson/agents.git
+cd ~/.claude
+git clone https://github.com/lst97/claude-code-sub-agents.git
+
+# Or if the directory already exists, pull the latest updates
+cd ~/.claude
+git pull origin main
 ```
 
 ### 🔧 MCP Server Configuration (Required for Full Performance)
@@ -396,46 +400,46 @@ Claude Code automatically coordinates agents using these patterns:
 
 | Agent | Best For | Example Use Cases |
 |-------|----------|-------------------|
-| **[backend-architect](development/backend-architect.md)** | API design, system architecture | RESTful APIs, microservices, database schemas |
-| **[frontend-developer](development/frontend-developer.md)** | UI/UX planning, component design | React components, responsive layouts, state management |
-| **[cloud-architect](infrastructure/cloud-architect.md)** | Infrastructure design, scalability | AWS/Azure/GCP architecture, cost optimization |
-| **[graphql-architect](data-ai/graphql-architect.md)** | GraphQL system design | Schema design, resolvers, federation |
+| **[backend-architect](agents/development/backend-architect.md)** | API design, system architecture | RESTful APIs, microservices, database schemas |
+| **[frontend-developer](agents/development/frontend-developer.md)** | UI/UX planning, component design | React components, responsive layouts, state management |
+| **[cloud-architect](agents/infrastructure/cloud-architect.md)** | Infrastructure design, scalability | AWS/Azure/GCP architecture, cost optimization |
+| **[graphql-architect](agents/data-ai/graphql-architect.md)** | GraphQL system design | Schema design, resolvers, federation |
 
 ### 💻 Implementation & Development  
 
 | Agent | Best For | Example Use Cases |
 |-------|----------|-------------------|
-| **[python-pro](development/python-pro.md)** | Python development | Django/FastAPI apps, data processing, async programming |
-| **[golang-pro](development/golang-pro.md)** | Go development | Microservices, concurrent systems, CLI tools |
-| **[typescript-pro](development/typescript-pro.md)** | TypeScript development | Type-safe applications, advanced TS features |
-| **[react-pro](development/react-pro.md)** | React expertise | Hooks, performance optimization, advanced patterns |
-| **[nextjs-pro](development/nextjs-pro.md)** | Next.js applications | SSR/SSG, full-stack React, routing |
+| **[python-pro](agents/development/python-pro.md)** | Python development | Django/FastAPI apps, data processing, async programming |
+| **[golang-pro](agents/development/golang-pro.md)** | Go development | Microservices, concurrent systems, CLI tools |
+| **[typescript-pro](agents/development/typescript-pro.md)** | TypeScript development | Type-safe applications, advanced TS features |
+| **[react-pro](agents/development/react-pro.md)** | React expertise | Hooks, performance optimization, advanced patterns |
+| **[nextjs-pro](agents/development/nextjs-pro.md)** | Next.js applications | SSR/SSG, full-stack React, routing |
 
 ### ☁️ Operations & Maintenance
 
 | Agent | Best For | Example Use Cases |
 |-------|----------|-------------------|
-| **[devops-incident-responder](infrastructure/devops-incident-responder.md)** | Production issues, deployments | Log analysis, deployment failures, system debugging |
-| **[incident-responder](infrastructure/incident-responder.md)** | Critical outages | Immediate response, crisis management, escalation |
-| **[deployment-engineer](infrastructure/deployment-engineer.md)** | CI/CD, containerization | Docker, Kubernetes, pipeline configuration |
-| **[database-optimizer](data-ai/database-optimizer.md)** | Database performance | Query optimization, indexing, migration strategies |
+| **[devops-incident-responder](agents/infrastructure/devops-incident-responder.md)** | Production issues, deployments | Log analysis, deployment failures, system debugging |
+| **[incident-responder](agents/infrastructure/incident-responder.md)** | Critical outages | Immediate response, crisis management, escalation |
+| **[deployment-engineer](agents/infrastructure/deployment-engineer.md)** | CI/CD, containerization | Docker, Kubernetes, pipeline configuration |
+| **[database-optimizer](agents/data-ai/database-optimizer.md)** | Database performance | Query optimization, indexing, migration strategies |
 
 ### 📊 Analysis & Optimization
 
 | Agent | Best For | Example Use Cases |
 |-------|----------|-------------------|
-| **[performance-engineer](infrastructure/performance-engineer.md)** | Application performance | Bottleneck analysis, caching strategies, optimization |
-| **[security-auditor](security/security-auditor.md)** | Security assessment | Vulnerability scanning, OWASP compliance, threat modeling |
-| **[data-scientist](data-ai/data-scientist.md)** | Data analysis | SQL queries, BigQuery, insights and reporting |
-| **[code-reviewer](quality-testing/code-reviewer.md)** | Code quality | Best practices, maintainability, architectural review |
+| **[performance-engineer](agents/infrastructure/performance-engineer.md)** | Application performance | Bottleneck analysis, caching strategies, optimization |
+| **[security-auditor](agents/security/security-auditor.md)** | Security assessment | Vulnerability scanning, OWASP compliance, threat modeling |
+| **[data-scientist](agents/data-ai/data-scientist.md)** | Data analysis | SQL queries, BigQuery, insights and reporting |
+| **[code-reviewer](agents/quality-testing/code-reviewer.md)** | Code quality | Best practices, maintainability, architectural review |
 
 ### 🧪 Quality Assurance
 
 | Agent | Best For | Example Use Cases |
 |-------|----------|-------------------|
-| **[test-automator](quality-testing/test-automator.md)** | Testing strategy | Unit tests, integration tests, E2E test suites |
-| **[debugger](quality-testing/debugger.md)** | Bug investigation | Error analysis, test failures, troubleshooting |
-| **[architect-reviewer](quality-testing/architect-review.md)** | Design validation | Architectural consistency, pattern compliance |
+| **[test-automator](agents/quality-testing/test-automator.md)** | Testing strategy | Unit tests, integration tests, E2E test suites |
+| **[debugger](agents/quality-testing/debugger.md)** | Bug investigation | Error analysis, test failures, troubleshooting |
+| **[architect-reviewer](agents/quality-testing/architect-review.md)** | Design validation | Architectural consistency, pattern compliance |
 
 ## 📚 Best Practices
 
@@ -505,11 +509,11 @@ To contribute a new subagent to the collection:
 
 ### Most Commonly Used Agents
 
-1. **[code-reviewer](quality-testing/code-reviewer.md)** - Quality assurance and best practices
-2. **[backend-architect](development/backend-architect.md)** - API and system design
-3. **[frontend-developer](development/frontend-developer.md)** - UI/UX implementation
-4. **[security-auditor](security/security-auditor.md)** - Security validation and compliance
-5. **[performance-engineer](infrastructure/performance-engineer.md)** - Optimization and bottleneck analysis
+1. **[code-reviewer](agents/quality-testing/code-reviewer.md)** - Quality assurance and best practices
+2. **[backend-architect](dagents/evelopment/backend-architect.md)** - API and system design
+3. **[frontend-developer](agents/development/frontend-developer.md)** - UI/UX implementation
+4. **[security-auditor](agents/security/security-auditor.md)** - Security validation and compliance
+5. **[performance-engineer](agents/infrastructure/performance-engineer.md)** - Optimization and bottleneck analysis
 
 ### Essential Coordination Patterns
 
